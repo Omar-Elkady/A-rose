@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title></title>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<style>
+.human{
+    width: 200px;
+    height: 300px;
+    margin: 20% 29%;
+    background-color: black;
+    position: relative;
+    left: 0%;
+    top: 47%;
+    transform: translateX(0%);
+}
+
+.nose{
+	position: absolute;
+    background-color: #E3FF2C;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    left: 46%;
+    bottom: 156px;
+    z-index: 3;
+	}
+		
+.top {
+	position: absolute;
+    background-color: #FF1E21;
+    width: 30px;
+    height: 45px;
+    border-radius: 50%;
+    left: 55%;
+    transform: translateX(-60%);
+    top: 83px;
+    border: 1px solid #A74D54;
+    z-index: 2;
+	}
+	.topR {
+    position: absolute;
+    background-color: #FF1E21;
+    width: 25px;
+    height: 45px;
+    border-radius: 50%;
+    right: 58px;
+    transform: rotate(
+50deg
+);
+    bottom: 164px;
+    border: 1px solid #A74D54;
+    z-index: 2;
+}
+.right {
+    position: absolute;
+    background-color: #FF1E21;
+    width: 45px;
+    height: 30px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    right: 78px;
+    border: 1px solid #A74D54;
+    top: 114px;
+}
+.bottom {
+    position: absolute;
+    background-color: #FF1E21;
+    width: 30px;
+    height: 45px;
+    border-radius: 50%;
+    left: 55%;
+    transform: translateX(-60%);
+    bottom: 122px;
+    border: 1px solid #A74D54;
+    z-index: 2;
+}
+.bottomL {
+    position: absolute;
+    background-color: #FF1E21;
+    width: 25px;
+    height: 45px;
+    border-radius: 50%;
+    left: 35%;
+    transform: rotate(
+45deg
+);
+    bottom: 128px;
+    border: 1px solid #A74D54;
+    z-index: 2;
+}
+.left {
+    position: absolute;
+    background-color: #FF1E21;
+    width: 45px;
+    height: 30px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    left: 138px;
+    border: 1px solid #A74D54;
+    bottom: 152px;
+}
+.topL {
+    position: absolute;
+    background-color: #FF1E21;
+    width: 25px;
+    height: 45px;
+    border-radius: 50%;
+    left: 70px;
+    transform: rotate(
+130deg
+);
+    bottom: 167px;
+    border: 1px solid #A74D54;
+    z-index: 2;
+}
+.bottomR {
+    position: absolute;
+    background-color: #FF1E21;
+    width: 25px;
+    height: 45px;
+    border-radius: 50%;
+    right: 55px;
+    transform: rotate(
+-50deg
+);
+    bottom: 127px;
+    border: 1px solid #A74D54;
+    z-index: 2;
+}
+.x {
+    position: absolute;
+    background-color: #0EFF09;
+    width: 10px;
+    height: 105px;
+    border-radius: 20%;
+    left: 55%;
+    transform: translateX(-60%);
+    top: 175px;
+    z-index: 1;
+}
+/* .left{
+	position:absolute;
+	background-color:#FF1E21;
+	width:45px;
+	height:30px;
+	border-radius:50%;
+	transform:translateX(-50%);
+	right :140px ;
+	border:1px solid #A74D54;
+	bottom :-35px
+	}
+.right{
+	position:absolute;
+	background-color:#FF1E21;
+	width:45px;
+	height:30px;
+	border-radius:50%;
+	transform:translateX(-50%);
+	left : 213px ;
+	border:1px solid #A74D54;
+	top :5px 
+	}
+
+
+.bottom {
+	position:absolute;
+	background-color:#FF1E21;
+	width:30px;
+	height:45px;
+	border-radius:50%;
+	left:55%;
+	transform:translateX(-60%);
+	bottom:-67px;
+	border:1px solid #A74D54;
+	z-index:2
+	}
+	
+.bottomL{
+	position:absolute;
+	background-color:#FF1E21;
+	width:25px;
+	height:45px;
+	border-radius:50%;
+	left:45%;
+	transform:rotate(45deg);
+	bottom:-60px;
+	border:1px solid #A74D54;
+	z-index:2
+	} 
+.topR{
+	position:absolute;
+	background-color:#FF1E21;
+	width:25px;
+	height:45px;
+	border-radius:50%;
+	right :125px ;
+	transform:rotate(50deg);
+	bottom :-24px;
+	border:1px solid #A74D54;
+	z-index:2
+	}
+	
+.topL{
+	position:absolute;
+	background-color:#FF1E21;
+	width:25px;
+	height:45px;
+	border-radius:50%;
+	left :154px ;
+	transform:rotate(130deg);
+	bottom :-25px;
+	border:1px solid #A74D54;
+	z-index:2
+	} 
+	
+.bottomR {
+	position:absolute;
+	background-color:#FF1E21;
+	width:25px;
+	height:45px;
+	border-radius:50%;
+	right :125px ;
+	transform:rotate(-50deg);
+	bottom :-60px;
+	border:1px solid #A74D54;
+	z-index:2
+	}
+	
+.x{
+	position:absolute;
+	background-color:#0EFF09;
+	width:10px;
+	height:105px;
+	border-radius:20%;
+	left:55%;
+	transform:translateX(-60%);
+	top:65px;
+	z-index:1
+	} */
+
+.x::before {
+	content:"" ;
+	position:absolute;
+	background-color:#0EFF09;
+	width:50px;
+	height:20px;
+	border-radius:50%;
+	left:40px;
+	transform:translateX(-60%);
+	top:25px;
+	z-index:1
+	}
+.x::after {
+	content:"" ;
+	position:absolute;
+	background-color:#0EFF09;
+	width:50px;
+	height:20px;
+	border-radius:50%;
+	right : -20px;
+	transform:translateX(-60%);
+	top:25px;
+	z-index:1
+	}
+/*
+استخدم في رسم ورقة 🍃 
+*/
+ /* ‏{
+	float‏: left‏;
+	width‏: 400px‏;
+	height‏: 400px‏;
+	shape‏-outside‏: url‏(leaf‏.png‏);
+	shape‏-margin‏: 15px‏;
+	shape‏-image‏-threshold‏: 0.5;
+	background‏: #009966 url(path/to/background-image.jpg);‏
+	mask‏-image‏: url‏(leaf‏.png‏);} */
+	</style>
+<body>
+<div class="human">
+<div class="nose"></div>
+<div class="top"></div>
+<div class="topR"></div>
+<div class="right"></div>
+
+<div class="bottom"></div>
+<div class="bottomL"></div>
+<div class="left"></div>
+<div class="topL"></div>
+<div class="bottomR"></div>
+
+<div class="x"></div>
+
+
+
+
+</div>
+
+</body>
+</html>
